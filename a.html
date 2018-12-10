@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+<style>
+.a{
+	border: 1px solid black;
+}
+.a:hover{
+	border-color: red;
+}
+</style>
+</head>
+<body>
+	<table class="a">
+		<tr>
+			<td>Phone Number</td>
+			<td><input type="text" name="City"></td>
+		</tr>
+		<tr>
+			<td>City</td>
+			<td><input  type="text" name="City"></td>
+		</tr>
+		<tr>
+			<td>Add to Mailing List?</td>
+			<td>
+				<select name="Add"  cols="30" >
+					<option value="no">No</option>
+					<option value="yes">Yes</option>
+					<option value="blank"></option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Other Notes</td>
+			<td> <textarea name="Notes"cols="21" rows="5"></textarea></td>
+		</tr>
+	</table>
+<input type="submit" name="submit">
+</body>
+</html>
