@@ -5,36 +5,51 @@
 	<title>Document</title>
 <style>
 .a{
-	border: 1px solid black;
+	border: 2px solid red;
+	background-color: grey;
+	color: white;
 }
 .a:hover{
-	border-color: red;
+	border-color: green;
+}
+.b{
+	border: 1px solid black;
+}
+.b:hover{
+	width: 200px;
+    height: 30px;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+.c{
+	text-align: center;
+	float: center;
 }
 </style>
 </head>
-<body>
-	<table class="a">
+<body style="background-color: black">
+	<table class="a" >
 		<tr>
 			<td>Phone Number</td>
-			<td><input type="text" name="City"></td>
+			<td > <input class="b" type="text" name="City" title="Số điện thoại"></td>
 		</tr>
 		<tr>
 			<td>City</td>
-			<td><input  type="text" name="City"></td>
+			<td><input class="b" type="text" name="City" title="Thành phố"></td>
 		</tr>
 		<tr>
 			<td>Add to Mailing List?</td>
 			<td>
-				<select name="Add"  cols="30" >
-					<option value="no">No</option>
-					<option value="yes">Yes</option>
+				<select class="b" name="Add"  cols="30" title="Thêm vào ds gửi">
+					<option value="no" title="Không">No</option>
+					<option value="yes" title="Có">Yes</option>
 					<option value="blank"></option>
 				</select>
 			</td>
 		</tr>
 		<tr>
 			<td>Other Notes</td>
-			<td> <textarea name="Notes"cols="21" rows="5"></textarea></td>
+			<td> <textarea name="Notes"cols="21" rows="5" title="Thêm chú thích"></textarea></td>
 		</tr>
 	</table>
 <input type="submit" name="submit">
